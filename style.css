@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b9d6f2;
+    }
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Concert One', sans-serif;
+    font-size: 300%;
+}
+input[type="text"] {
+    padding: 8px;
+    width: 50%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 1%;
+    margin-bottom: 0.5%;
+    font-family: 'Comfortaa', sans-serif;
+}
+button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin: 0% 1%;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 80%;
+}
+li {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    padding: 8px;
+    background-color: white;
+    border: 0.5px solid #a5a1a1;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-family: 'Comfortaa', sans-serif;
+}
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+button.delete {
+    margin-left: auto;
+    background-color: #dc3545;
+    width: 14%;
+    }
+button.completed{
+    width: 14%;
+    background-color: #70e000;
+    text-decoration: none;
+    color: #fff;
+}
+.agregar{
+    transform: translateZ(0) scale(1);
+    transition: transform .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    font-family: 'Comfortaa', sans-serif;
+}
+.agregar:not(:disabled):hover {
+    transform: scale(1.05);
+}
+.agregar:focus {
+    outline: 0 solid transparent;
+}
+.agregar:focus:before {
+    border-width: .125rem;
+    content: "";
+    left: calc(-1*.375rem);
+    pointer-events: none;
+    position: absolute;
+    top: calc(-1*.375rem);
+    transition: border-radius;
+    user-select: none;
+}
+.agregar:focus:not(:focus-visible) {
+    outline: 0 solid transparent;
+}
+.agregar:not(:disabled):active {
+    transform: translateY(.125rem);
+}
+
+li.completed{
+    background-color: #70e000;
+    text-decoration: none;
+}
+#cardList{
+    margin: auto;
+    width: 75%;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(114, 76, 249, 0.3);
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.button1{
+    align-items: center;
+    appearance: none;
+    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+    font-family: 'Comfortaa', sans-serif;
+}  
+.button1:focus {
+    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+.button1:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+.button1:active {
+    box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+#imagen{
+    text-align: center;
+
+}
+.imagen{
+    width: 25%;
+    border-radius: 111px;
+    margin-top: 1.5%;
+}
+
+#nuevaTarea::placeholder{
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.editar{
+    background-image: url("icons8-editar-24.png");
+    width: 8%;
+    height: 30px; 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+

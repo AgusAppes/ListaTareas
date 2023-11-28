@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="tarea-completada-96.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Lista de tareas</title>
+</head>
+<body>
+    <div style="display: flex; align-items: center;
+    justify-content: center;">
+        <h1>Lista de Tareas</h1>
+        <img src="tarea-completada-96.png" alt="">
+    </div>
+    
+    <main style="width: 95%; text-align: center; padding: 1%;">
+        <input type="text" id="nuevaTarea" placeholder="Ingrese una nueva tarea">
+        <button onclick="agregarTarea()" class="agregar">Agregar</button>
+        <div id="imagen">
+            <img class="imagen" src="6416398.gif" alt="">
+        </div>
+        <div id="cardList" style="display: none;">
+            <div id="botones" style="display: none;">
+                <button id="btnPendientes" class="button1">Mostrar Pendientes</button>
+                <button id="btnCompletadas" class="button1">Mostrar completadas</button>
+                <button id="btnTodas" class="button1" style="display: none;">Mostrar todas</button>
+            </div>
+            <ul id="listaTareas"></ul>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
